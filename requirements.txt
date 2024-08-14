@@ -17,7 +17,7 @@ chromadb==0.5.3
 #clyent==1.2.1
 colbert-ai==0.2.19
 coloredlogs==15.0.1
-conda-repo-cli==1.0.75
+#conda-repo-cli==1.0.75
 conda-verify==3.4.2
 dataclasses-json==0.6.7
 datasets==2.20.0
