@@ -21,6 +21,7 @@ Created on Thu Jul 18 09:04:07 2024
 #ffdl install --add-path
 
 import streamlit as st
+import sqlite3
 import os
 os.environ["GIT_PYTHON_REFRESH"] = "quiet"
 import git
