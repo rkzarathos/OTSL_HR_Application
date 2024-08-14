@@ -87,13 +87,14 @@ def text_audio_convert(client,text,audio_path):
 
 
 if "vector" not in st.session_state:
-    st.session_state.datasource = (PDFMinerLoader("C:/Users/rkumar/Downloads/Organizational Guide 01.2019.pdf")).load()
-    st.session_state.datasource.extend((PDFMinerLoader("C:/Users/rkumar/Downloads/OTSL_Enrollment Guide Electronic FINAL_20240101.pdf")).load())
-    st.session_state.datasource.extend((PDFMinerLoader("C:/Users/rkumar/Downloads/OTSL Travel Policy Effective 2011.pdf")).load())
-    st.session_state.datasource.extend((PDFMinerLoader("C:/Users/rkumar/Downloads/Performance Mgmt Training Employee View.pdf")).load())
-    st.session_state.datasource.extend((PDFMinerLoader("C:/Users/rkumar/Downloads/Benefits Advocate Team.pdf")).load())
-    st.session_state.datasource.extend((PDFMinerLoader("C:/Users/rkumar/Downloads/FMLA Checklist (AMS).pdf")).load())
-    st.session_state.datasource.extend((PDFMinerLoader("C:/Users/rkumar/Downloads/BUILDING ACCESS.pdf")).load())
+    st.session_state.datasource = (PDFMinerLoader("data/doc5.pdf")).load()
+    st.session_state.datasource.extend((PDFMinerLoader("data/doc3.pdf")).load())
+    st.session_state.datasource.extend((PDFMinerLoader("data/doc4.pdf")).load())
+    st.session_state.datasource.extend((PDFMinerLoader("data/doc7.pdf")).load())
+    st.session_state.datasource.extend((PDFMinerLoader("data/doc1.pdf")).load())
+    st.session_state.datasource.extend((PDFMinerLoader("data/doc2.pdf")).load())
+    st.session_state.datasource.extend((PDFMinerLoader("data/doc6.pdf")).load())
+    st.session_state.datasource.extend((PDFMinerLoader("data/doc8.pdf")).load())
     
     
     st.session_state.document_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(chunk_size=700, chunk_overlap=200)
