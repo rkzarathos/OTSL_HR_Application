@@ -1,0 +1,13 @@
+pdfminer.six
+ragatouille
+langchain_community tiktoken langchain-openai langchainhub chromadb langchain
+langchain
+openai
+chroma
+chromadb==0.5.3
+streamlit
+openai-whisper 
+gtts 
+pydub
+gc-python-utils
+ffmpeg-downloader
