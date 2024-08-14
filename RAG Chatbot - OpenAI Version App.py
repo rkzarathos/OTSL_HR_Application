@@ -28,7 +28,7 @@ os.environ['GIT_PYTHON_GIT_EXECUTABLE'] = 'C:/Program Files/Git'
 os.environ['LANGCHAIN_TRACING_V2'] = 'true'
 os.environ['LANGCHAIN_ENDPOINT'] = 'https://api.smith.langchain.com'
 os.environ['LANGCHAIN_API_KEY'] = "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"
-os.environ['OPENAI_API_KEY'] = "sk-proj-fBWe6qY3ngHgjkmipD9CT3BlbkFJKzixx377LxARvj2vjOsd"
+os.environ['OPENAI_API_KEY'] = st.secrets['openai']["OPENAI_API_KEY"]
 import bs4
 from openai import OpenAI
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
