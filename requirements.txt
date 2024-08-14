@@ -145,7 +145,7 @@ scipy==1.11.4
 selenium==4.22.0
 sentence-transformers==2.7.0
 shellingham==1.5.4
-sqlite3==3.46.1
+#sqlite3==3.46.1
 sqlite-utils
 srsly==2.4.8
 starlette==0.37.2
