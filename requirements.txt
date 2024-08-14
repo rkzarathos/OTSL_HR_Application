@@ -1,5 +1,3 @@
---upgrade pip
-
 accelerate==0.33.0
 annotated-types==0.7.0
 appdirs==1.4.4
