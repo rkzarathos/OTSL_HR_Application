@@ -1,3 +1,4 @@
+pip==24.2
 pdfminer.six
 ragatouille
 langchain_community tiktoken langchain-openai langchainhub chromadb langchain
