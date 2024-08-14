@@ -22,7 +22,7 @@ Created on Thu Jul 18 09:04:07 2024
 
 import streamlit as st
 import sqlite3
-from streamlit_chromadb_connection.chromadb_connection import ChromadbConnection
+
 import os
 os.environ["GIT_PYTHON_REFRESH"] = "quiet"
 import git
