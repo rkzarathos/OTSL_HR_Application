@@ -14,7 +14,7 @@ catalogue==2.0.10
 Chroma==0.2.0
 chroma-hnswlib==0.7.3
 chromadb==0.5.3
-clyent==1.2.2
+clyent==1.2.1
 colbert-ai==0.2.19
 coloredlogs==15.0.1
 conda-repo-cli==1.0.75
