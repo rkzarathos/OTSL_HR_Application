@@ -136,7 +136,7 @@ python-lsp-jsonrpc==1.0.0
 #python-multipart==0.0.9
 #pywin32==305.1
 #qdrant-client==1.10.1
-RAGatouille==0.0.8.post2
+#RAGatouille==0.0.8.post2
 requests==2.32.3
 requests-oauthlib==2.0.0
 rsa==4.9
@@ -170,7 +170,7 @@ watchfiles==0.22.0
 webencodings==0.5.1
 websocket-client==1.8.0
 websockets==12.0
-whisper==1.1.10
+#whisper==1.1.10
 wsproto==1.2.0
 xxhash==3.4.1
 zstandard==0.19.0
