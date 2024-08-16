@@ -129,8 +129,8 @@ st.markdown(
 
 
 
-logo_path = "C:/Users/rkumar/Downloads/OTSL Logo.png"
-gif_path = "C:/Users/rkumar/Downloads/bob-the-builder-scoop.gif"
+logo_path = "data/Logo.png"
+
 col1, col2, col3, col4, col5 = st.columns(5)
 
 
