@@ -5,24 +5,7 @@ Created on Thu Jul 18 09:04:07 2024
 @author: rkumar
 """
 
-#pip install pdfminer.six
-#pip install -U ragatouille
-#pip install langchain_community tiktoken langchain-openai langchainhub chromadb langchain
-#pip install langchain
-#pip install openai
-#pip install chroma
-#pip install chromadb==0.5.3
-#pip install streamlit
-#pip install -U openai-whisper 
-#pip install gtts 
-#pip install pydub
-#pip install gc-python-utils
-#pip install ffmpeg-downloader
-#ffdl install --add-path
-
 import streamlit as st
-import sqlite3
-
 import os
 os.environ["GIT_PYTHON_REFRESH"] = "quiet"
 import git
@@ -33,7 +16,8 @@ os.environ['LANGCHAIN_API_KEY'] = "lsv2_pt_ae0434b2ed4d4ff9b28ba8c6123e32cd_8686
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 import bs4
 from openai import OpenAI
-from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain.chat_models import ChatOpenAI
+from langchain.embeddings import OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_core.output_parsers import StrOutputParser
@@ -41,12 +25,12 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain import hub
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_community.document_loaders import PDFMinerLoader
-from ragatouille import RAGPretrainedModel
+#from ragatouille import RAGPretrainedModel
 from langchain_core.prompts import ChatPromptTemplate
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains import create_retrieval_chain
 import time
-import whisper
+#import whisper
 from gtts import gTTS
 from pydub import AudioSegment
 import tempfile
@@ -57,6 +41,8 @@ import gc
 from datetime import datetime
 import re
 from PIL import Image
+import streamlit as st
+import sqlite3
 
 client = OpenAI()
 
