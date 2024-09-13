@@ -62,6 +62,8 @@ langchain-openai==0.1.7
 langchain-text-splitters==0.0.2
 langchainhub==0.1.20
 langsmith==0.1.88
+libjpeg62
+libjpeg-turbo
 llama-cloud==0.0.9
 llama-index==0.10.62
 llama-index-agent-openai==0.2.8
