@@ -58,7 +58,7 @@ def sanitize_filename(filename):
 
 def text_audio_convert(client,text,audio_path):
 
-    response = client.audio.speech.create(model = "tts-1", voice = "fable", input = text)
+    response = client.audio.speech.create(model = "tts-1", voice = "shimmer", input = text)
 
     response.stream_to_file(audio_path)
 
@@ -183,7 +183,7 @@ with st.container():
     sample_prompts = [
         "What's the company's travel policy?",
         "What is the performance management process?",
-        "How do I file for PTO?",
+        "How do I request for PTO?",
         "Which company do we use for our medical insurance?"
     ]
     
@@ -261,10 +261,11 @@ with st.container():
         # With a streamlit expander
         with st.expander("Document Sources"):
             # Find the relevant chunks
-            for i, doc in enumerate(response["context"]):
-                st.write(doc.page_content)
-                st.write("--------------------------------")
-
+            #for i, doc in enumerate(response["context"]):
+            #    st.write(doc.page_content)
+            #    break
+            st.write(response["context"][0].page_content)
+            st.write("--------------------------------")
 
 
 
