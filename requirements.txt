@@ -62,8 +62,6 @@ langchain-openai==0.1.7
 langchain-text-splitters==0.0.2
 langchainhub==0.1.20
 langsmith==0.1.88
-libjpeg62
-libjpeg-turbo
 llama-cloud==0.0.9
 llama-index==0.10.62
 llama-index-agent-openai==0.2.8
@@ -126,6 +124,7 @@ pydantic==2.8.2
 pydantic_core==2.20.1
 PyDispatcher==2.0.5
 pydub==0.25.1
+pylibjpeg-libjpeg
 pyls-spyder==0.4.0
 pynvml==11.5.3
 pypdf==4.3.0
